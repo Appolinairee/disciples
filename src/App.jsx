@@ -7,7 +7,6 @@ import NavBar from "./components/NavBar/NavBar";
 import Home from './Pages/Home';
 import Gotop from './components/Gotop/Gotop';
 import Error404 from './components/ErrorPage/Error';
-
 import TransitionEffect from './components/TransitionEffect/TransitionEffect';
 import ScrollToTop from './components/ScrollToTop';
 import Footer from './components/Footer/Footer';
