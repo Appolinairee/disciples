@@ -1,0 +1,33 @@
+.slideState{
+    justify-content: start;
+    bottom: 1.5rem; left: 9%;
+    gap: .6rem;
+    align-items: center;
+}
+
+.slideState .buttons{
+    gap: 8px;
+}
+
+.slideState span{
+    position: relative;
+    width: 5px;
+    border: .3px solid var(--color-white);
+    border-radius: 50%;
+    padding: 3px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.slideState .icon{
+    fill: var(--color-white-pur);
+    border: .3px solid var(--color-white);
+    border-radius: 50%;
+    padding: 3px 5px;
+    font-size: 1.5rem;
+}
+
+.slideState .icon:hover{
+    background-color: var(--color-white);
+    fill: var(--color-primary);
+}

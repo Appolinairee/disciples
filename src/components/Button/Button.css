@@ -1,0 +1,50 @@
+button{
+    padding: 12px 20px;
+    font-size: 18px;
+    justify-content: center;
+    gap: .5rem;
+    background: transparent;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+}
+
+button .icon{
+    font-size: .5rem;
+}
+
+button.button1{
+    background: var(--color-secondary);
+    color: white;
+    border-radius: 5px;
+}
+
+button.button2{
+    border: .5px solid var(--color-white-pur);
+    border-radius: 10px 25px 25px 10px;
+}
+
+button.button3{
+    padding: 15px 20px;
+    border-radius: 7px;
+    background: var(--color-secondary);
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: white;
+    transition: var(--transition);
+}
+
+button.button3:hover{
+   gap: 2rem;
+}
+
+button.button3 .icon{
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 450px) {
+    button{
+        padding: 10px 10px;
+        margin-top: 10px;
+    }
+}

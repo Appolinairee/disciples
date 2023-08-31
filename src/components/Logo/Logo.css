@@ -1,0 +1,22 @@
+.logo{
+    color: var(--color-secondary);
+    white-space: nowrap;
+    font-size: 19px;
+    letter-spacing: 3px;
+    border-radius: 10px;
+    padding:  0 10px;
+    font-family: 'Tektur', sans-serif;
+    width: fit-content;
+}
+
+.logo img{
+    width: 60px;
+    height: 60px;
+    border-radius: 0 0 15px 15px;
+}
+
+@media (max-width: 490px) {
+    .logo{
+        height: 40px;
+    }
+}

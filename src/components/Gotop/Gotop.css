@@ -1,0 +1,21 @@
+.gotop{
+    position: fixed;
+    right: 20px;
+    z-index: 100;
+    bottom: 20px;
+    padding: 5px 8px 3px;
+    background: var(--color-white-pur);
+    border-radius: 5px;
+    transform: scale(1);
+}
+
+.gotop .icon{
+    color: var(--color-primary);
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 480px) {
+    .gotop{
+        padding: 3px 5px 0px;
+    }
+}

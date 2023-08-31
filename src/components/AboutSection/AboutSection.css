@@ -1,0 +1,150 @@
+section.aboutSection{
+    gap: 0%;
+    padding: 0 5%;
+    color: var(--color-white-pur);
+    background: var(--color-section);
+}
+
+section.aboutSection img{
+    width: 40%;
+    height: 100%;
+    border-radius: 9px;
+}
+
+section.aboutSection .aboutContent{
+    width: 50%;
+}
+
+
+section.aboutSection .aboutContent h2{
+    font-size: 2.3rem;
+    margin: 1rem 0;
+    line-height: 40px;
+    width: 100%;
+}
+
+section.aboutSection .aboutContent p{
+    color: var(--color-white);
+    margin: 10px 0;
+    max-width: 500px;
+}
+
+section.aboutSection .aboutStats{
+    justify-content: start;
+    gap: 10%;
+    margin-top: 40px;
+}
+
+section.aboutSection .aboutStats .aboutStat{
+    justify-content: start;
+    gap: 10%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px var(--color-black-opacity), -2px -2px 4px var(--color-black-opacity);
+}
+
+section.aboutSection .aboutStats .aboutStat .icon{
+    font-size: 4rem;
+    fill: var(--color-secondary);
+    color: var(--color-secondary);
+}
+
+section.aboutSection .aboutStats .aboutStat h3{
+    font-size: 2.2rem;
+    position: relative;
+    line-height: 45px;
+}
+
+section.aboutSection .aboutStats .aboutStat h3 span{
+    position: absolute;
+    top: -15px; right: 0px;
+    color: var(--color-secondary);
+    font-size: 20px;
+    -webkit-text-stroke: 1px;
+}
+section.aboutSection .aboutStats .aboutStat p{
+    margin-top: -5px;
+    white-space: nowrap;
+}
+
+section.aboutSection button{
+    padding: 15px 20px;
+    border-radius: 7px;
+    background: var(--color-secondary);
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: white;
+    transition: var(--transition);
+}
+
+section.aboutSection button:hover{
+   gap: 2rem;
+}
+
+section.aboutSection button .icon{
+    font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+    section.aboutSection .aboutContent{
+        width: 100%;
+    }
+
+    section.aboutSection .aboutStats .aboutStat{
+        padding: 10px 10px;
+    }
+
+    section.aboutSection{
+        /* padding: 5%; */
+        flex-direction: column;
+    }
+
+    section.aboutSection img{
+        width: 100%;
+        max-height: 60vh;
+    }
+
+    section.aboutSection .aboutContent{
+        justify-content: center;
+        margin-top: 1.5rem;
+    }
+
+    section.aboutSection .aboutStats{
+        gap: 1rem;
+       align-items: start;
+    }
+}
+
+@media (max-width: 480px){
+    section.aboutSection{
+        margin: 0rem 0;
+        padding: 0 5%;
+    }
+
+    section.aboutSection .aboutContent h2{
+        font-size: 1.6rem;
+        line-height: 30px;
+    }
+
+    section.aboutSection .aboutStats{
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 1rem;
+       align-items: start;
+    }
+
+}
+
+@media (max-width: 300px) {
+    section.aboutSection .aboutContent h2{
+        font-size: 1.3rem;
+    }
+
+    section.aboutSection .aboutContent p{
+        font-size: 15px;
+    }
+
+    section.aboutSection button{
+        font-size: .9rem;
+    }
+}

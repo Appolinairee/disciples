@@ -1,0 +1,219 @@
+.slides{
+    margin-top: 6rem;
+    padding: 2rem 5% 0;
+    color: var(--color-white-pur);
+}
+
+.slides .headers{
+    gap: 5%;
+    grid-template-columns: 2fr 3fr;
+}
+
+.slides .headerIllustration__socialMedia{
+    gap: 5%;
+    width: 60%;
+}
+
+.slides .headerIllustration{
+    position: relative;
+    width: 70vw;
+    max-height: 400px;
+    justify-self: center;
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 7px solid rgba(0, 0, 0, 0.2);
+    animation: profile__animate 10s ease-in-out infinite 1s;
+}
+
+@keyframes profile__animate {
+    0%{
+        border-radius: 50% 30% 20% 60%/50% 20% 60% 30%;
+    }
+
+    50%{
+        border-radius: 20% 50% 60% 30%/40% 50% 20% 50%;
+    }
+
+    100%{
+        border-radius: 50% 30% 20% 60%/50% 20% 60% 30%;
+    }
+
+}
+
+.slides .headerIllustration img{
+    width: 100%;
+    height: 100%;
+}
+
+.slides .headers .headerContent{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: auto;
+}
+
+.slides .headers .contentCategorie span{
+    padding-left: 5.4rem;
+}
+
+.slides .headers .contentCategorie span::before{
+    background: var(--color-white-pur);
+    left: 0; top: 49%;
+    width: 5.3rem;
+}
+
+.slides .headers h2{
+    font-size: 2.3rem;
+    margin: 1rem 0 1rem;
+}
+
+.slides .headers p{
+    margin: 1rem 0 2rem;
+    max-width: 450px;
+    font-size: 17px;
+}
+
+
+.slides .headers .headerDetails{
+    justify-content: start;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.slides .headers .home__social{
+    grid-template-columns: max-content;
+    font-size: 1.3rem;
+    color: var(--color-white-pur);
+}
+
+.slides .headers .home__social p{
+    position: relative;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+.slides .headers .home__social .icon{
+    transition: var(--transition);
+    font-size: 1.5rem;
+}
+.slides .headers .home__social .icon:hover{
+    transform: scale(1.2);
+}
+
+.slides .headers .home__social p span{
+    position: absolute;
+    left: 100%;
+    white-space: nowrap;
+    background: var(--color-white-pur);
+    transform: translateY(-20px);
+    padding: 1px 5px;
+    border-radius: 5px;
+    color: var(--color-primary);
+    padding-left: 10px;
+    font-size: 15px;
+    opacity: 0;
+    transition: all .2s ease;
+}
+
+.slides .headers .home__social p:hover span{
+    opacity: 1;
+    transform: translate(0);
+}
+
+.slides .headers .home__social p span::before{
+    background: var(--color-white-pur);
+    left: -7px; top: 50%;
+    width: 10px; height: 10px;
+    transform: rotate(45deg) translate(0, -50%);
+}
+
+@media screen and (max-width: 800px) {
+    .slides{
+        margin-top: 2rem;
+    }
+
+    .slides .headers{
+        flex-direction: column-reverse;
+    }
+
+    .slides .headerIllustration__socialMedia{
+        width: 100%;
+    }
+
+    .slides .headerIllustration__socialMedia .home__social{
+        order: -1;
+    }
+
+    .slides .headerIllustration{
+        justify-self: center;
+        width: 400px;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 50%;
+        border: 4px solid rgba(0, 0, 0, 0.1);
+        animation: profile__animate 10s ease-in-out infinite;
+    }
+
+    .slides .headers h2{
+        font-size: 2rem;
+        margin: 0rem 0 .2rem;
+    }
+    
+    .slides .headers p{
+        margin: .5rem 0 1rem;
+        max-width: 450px;
+        font-size: 17px;
+        width: 100%;
+    }
+
+    .slides .headers .headerDetails__indicators{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .slides .headers .headerDetails{
+        margin-top: 3rem;
+        margin-bottom: 0rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .slides .headerIllustration{
+       height: 250px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .slides{
+        margin-top: 2rem;
+        padding: 2rem 2%;
+    }
+
+    .slides .headers h2{
+        font-size: 1.5rem;
+    }
+
+    .slides .headers p{
+        font-size: 16px;
+    }
+
+    .slides .headerIllustration{
+        height: 250px;
+     }
+
+    .slides .headerIllustration__socialMedia{
+        gap: 0%;
+        width: 100%;
+    }
+
+    .slides .headers .home__social p{
+        padding: 0 1rem 0 0;
+    }
+
+    .slides .headers .headerDetails{
+        gap: .5rem;
+        flex-wrap: wrap;
+    }
+}

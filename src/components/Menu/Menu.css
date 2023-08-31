@@ -1,0 +1,136 @@
+ul.bar li{
+    position: relative;
+}
+
+ul .link.active .subMenu p{
+    color: var(--color-white-pur);
+    font-weight: normal;
+}
+
+ul.bar li .subMenu{
+    position: absolute;
+    top: 25px;
+    width: 300px;
+    left: 50%;
+    padding: 0 1rem 10px;
+    transform: translate(-50%, 0);
+    transition: var(--transition);
+    background: transparent;
+    white-space: wrap;
+    color: var(--color-white-pur);
+}
+
+ul.bar li .subMenu .subMenuTop{
+    width: 100%;
+    height: 35px;
+    background-color: transparent;
+}
+
+ul.bar li .subMenu .subMenuMain{
+    background: var(--color-primary);
+    padding: 0 1rem 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px var(--color-secondary);
+}
+
+ul.bar li .subMenu .subMenuMain::after{
+    width: 30px; height: 30px;
+    left: calc(50% - 15px);
+    top: -15px;
+    transform: rotate(45deg);
+    background-color: var(--color-primary);
+    box-shadow: -1px -1px 1px var(--color-secondary);
+}
+
+ul.bar li .subMenu p{
+    font-size: 14px;
+    white-space: wrap;
+    border-top: .5px solid var(--color-black-opacity);
+    padding: 13px 0;
+    transition: var(--transition);
+}
+
+ul.bar li .subMenu p::after{
+    background: var(--color-secondary);
+    height: 2px; width: 0%;
+    top: 100%; left: 0;
+    border-radius: 5px;
+    transition: .4s ease;
+}
+
+ul.bar li .subMenu p:hover::after{
+    width: 100%;
+}
+
+
+ul.bar li .subicon{
+    transition: var(--transition);
+}
+
+ul.bar li:hover .subicon{
+    transform: rotate(-180deg);
+}
+
+ul.bar li .navElement{
+
+    gap: .5rem;
+ }
+
+
+@media (max-width: 900px){
+    ul.bar li .subMenu{
+        position: static;
+        top: 0px;
+        width: fit-content;
+        padding: 0rem 1rem 5px;
+        left:unset;
+        transform: translate(0%, 0);
+        transition: var(--transition);
+        background: white;
+        white-space: wrap;
+        border-radius: 0 0 10px 10px;
+        color: var(--color-white-pur);
+        margin-left: 10px;
+        box-shadow: none;
+        margin-right: 20px;
+        overflow-y: hidden;
+    }   
+
+    ul.bar li{
+        flex-wrap: wrap;
+    }
+
+    ul.bar li .navElement{
+       flex-wrap: nowrap;
+       width: 100%;
+       padding: 7px 0;
+       gap: .5rem;
+    }
+
+    ul.bar li .subMenu .subMenuTop, ul.bar li .subMenu .subMenuMain::after{
+       display: none;
+    }
+
+    ul.bar li .subMenu{
+        left: 0;
+        padding: 0;
+        width: 100%;
+        text-transform: capitalize;
+        font-size: 16px;
+    }
+    
+    ul.bar li .subMenu .subMenuMain{
+       padding: 0;
+       border-radius: 0;
+    }
+
+    ul.bar li p.flex{
+        width: 100%;
+    }
+
+    ul.bar li .subMenu p{
+        text-overflow:clip;
+        padding: 10px 0;
+
+    }
+}

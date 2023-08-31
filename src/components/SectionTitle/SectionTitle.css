@@ -1,0 +1,49 @@
+.section__title{
+    margin: 2rem 0 1rem;
+    text-align: center;
+    padding: 1rem 5% 0rem;
+    color: var(--color-white-pur);
+}
+
+.researchs .section__title{
+   
+}
+
+.section__title h2{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    line-height: 35px;
+    margin-bottom: 10px;
+}   
+
+.section__title p{
+    font-size: 16px;
+    color: var(----color-text);
+}
+
+.section_title_plus{
+    padding: 5% 7% 0;
+    gap: 5px;
+    color: var(--color-secondary);
+    cursor: pointer;
+    font-weight: bold;
+    text-align: left;
+    align-items: center;
+    justify-content: end;
+}
+
+@media screen and (max-width: 600px) {
+    .section__title h2{
+        font-size: 2.2rem;
+    }
+
+    .section_title .section_title_plus{
+       display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .section__title h2{
+        font-size: 1.6rem;
+    }
+}
