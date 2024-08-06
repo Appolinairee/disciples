@@ -1,13 +1,18 @@
-import React from 'react';
-// import './Paragraph.css';
+import React from "react";
+import ImageContent from "./ImageContent";
 
-const Paragraph = ({ title, text }) => {
-    return (
-        <div className="paragraph">
-            <h2 className="paragraph-title">{title}</h2>
-            <p className="paragraph-text">{text}</p>
-        </div>
-    );
+const Paragraph = ({ content }) => {
+  return (
+    <div className="paragraph">
+      {content.title && <h2 className="paragraph-title">{content.title}</h2>}
+
+      {content.text && <p className="paragraph-text">{content.text}</p>}
+      
+      {content.image && (
+        <ImageContent src={content.image} alt={content.title} />
+      )}
+    </div>
+  );
 };
 
 export default Paragraph;

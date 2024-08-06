@@ -1,11 +1,11 @@
 import React from "react";
 // import "./Quote.css";
 
-const Quote = ({ text, author }) => {
+const Quote = ({ content }) => {
   return (
     <div className="quote">
-      <blockquote className="quote-text">“{text}”</blockquote>
-      {author && <p className="quote-author">— {author}</p>}
+      <blockquote className="quote-text">“{content.text}”</blockquote>
+      {content.author && <p className="quote-author">— {content.author}</p>}
     </div>
   );
 };

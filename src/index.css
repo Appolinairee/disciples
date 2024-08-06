@@ -70,6 +70,7 @@ body .app{
     margin: 3rem 3%;
     background: var(--color-primary);
     padding: 3rem 2%;
+    min-height: 55vh;
 }
 
 .btn{

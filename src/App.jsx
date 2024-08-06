@@ -6,17 +6,16 @@ import { AnimatePresence} from 'framer-motion';
 import NavBar from "./components/NavBar/NavBar";
 import Home from './Pages/Home';
 import Gotop from './components/Gotop/Gotop';
-import Error404 from './components/ErrorPage/Error';
 import TransitionEffect from './components/TransitionEffect/TransitionEffect';
 import ScrollToTop from './components/ScrollToTop';
 import Footer from './components/Footer/Footer';
 import Apropos from './Pages/Apropos';
 import Contact from './components/Contact/Contact';
-import Enseigements from './Pages/Enseigements';
+import EnseignementPage from './Pages/EnseignementPage';
+import Enseignements from './Pages/Enseigements';
 
 const App = () => {
   
-  // Mode sombre settings for all app
   const [theme, setTheme] = useState(0);
   const handleTheme = () => {
     setTheme( (theme)? 0 : 1);
@@ -33,7 +32,8 @@ const App = () => {
                 <Route path='' element={<Home />} />
                 <Route path='apropos' element={<Apropos />} />
                 <Route path='contacts' element={<Contact />} />
-                <Route path='enseignements' element={<Enseigements />} />
+                <Route path='enseignements' element={<Enseignements />} />
+                <Route path="/enseignement/:id" element={<EnseignementPage />} />
                 <Route path='*'  element={<Home />} />
               </Routes>
             </AnimatePresence>
