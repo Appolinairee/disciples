@@ -1,0 +1,223 @@
+.contact{
+    padding: 0rem 7% 5rem;
+    margin-top: -1rem;
+    position: relative;
+    justify-content: space-between;
+}
+
+.contact .contactForm{
+    position: relative;
+    color: var(--color-white-pur);
+    padding: 2rem 0;
+}
+
+.contact .contactForm h1{
+    font-size: 2.5rem;
+}
+
+.contact .contactForm p{
+    line-height: 30px;
+    margin: .7rem 0;
+    max-width: 500px;
+    font-size: 17px;
+}
+
+.contact .newsletter{
+    margin-top: 2rem;
+    width: 80%;
+}
+
+.contact .contactInfos{
+    position: absolute;
+    right: 5%;
+    top: 0;
+    height: 100%;
+    width: 42%;
+}
+
+.contact .contactElements{
+    position: relative;
+    background: black;
+    color: white;
+    padding: 2rem;
+    z-index: 3;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.contact .contactInfos .contactElements h2{
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.contact .contactInfos .contactElements::before{
+    top: -15px;
+    left: -15px;
+    background: var(--color-secondary);
+    width: 40px;
+    box-shadow: -3px -1px 5px rgba(0, 0, 0, .25);
+    height: 40px;
+    transition: .3s ease;
+}
+
+.contact .contactInfos .contactInfo{
+    justify-content: start;
+    gap: 1rem;
+    font-size: 16px;
+    margin: 1.8rem 0;
+}
+
+.contact .contactInfos .contactElements:hover::before{
+   transform: rotate(180deg);
+}
+
+.contact .contactInfos .contactInfo .icon{
+    font-size: 2.3rem;
+    transition: var(--transition);
+}
+
+.contact .contactInfos .contactInfo:hover .icon{
+    transform: scale(1.1);
+}
+
+.contact .icons{
+    position: absolute;
+    background: var(--color-secondary);
+    height: 100%;
+    width: 50%;
+    top: 0; right: 0%;
+    align-items: end;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    padding: 3%;
+    padding: 0 5%;
+    z-index: 1;
+    color: white;
+}
+
+.contact .icons .icon{
+    margin-bottom: 20px;
+    transition: var(--transition);
+    padding: 10px;
+    font-size: 2.7rem;
+}
+
+.contact .icons .icon:hover{
+    transform: scale(1.1);
+    border-bottom: solid white;
+}
+
+@media (max-width: 1150px) {
+    .contact{
+        flex-direction: column;
+    }
+
+    .contact .contactInfos{
+        position: relative;
+        width: 90%;
+        right: 0;
+        margin-left: 5%;
+    }
+    
+    .contact .contactElements{
+        width: 95%;
+        transform: none;
+        margin-top: 10%;
+    }
+
+    .contact .icons{
+        height: 120%;
+        width: 35%;
+    }
+}
+
+@media (max-width: 700px){
+    .contact .contactElements{
+        margin-top: 10%;
+    }
+
+    .contact .icons{
+        width: 50%;
+    }
+
+    .contact .contactInfos{
+        width: 100%;
+    }
+
+    .contact .newsletter{
+        margin-top: 2rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px){
+    .contact{
+        padding: 0rem 5% 5rem;
+        margin-top: -1rem;
+        position: relative;
+        justify-content: space-between;
+    }
+
+    .contact .contactForm h1{
+        font-size: 1.9rem;
+        text-align: center;
+        white-space: nowrap;
+    }
+    
+    .contact .contactForm p{
+        line-height: normal;
+        margin: .7rem 0 1.5rem;
+        max-width: unset;
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .contact .contactForm form input.btn{
+        padding: 15px;
+        margin-top: 15px;
+    }
+    
+    .contact .contactElements{
+        padding: 2rem 1rem;
+        margin-top: 10%;
+    }
+    
+    .contact .contactInfos .contactElements h2{
+        font-size: 2rem;
+        margin: 0px 0;
+    }
+    
+    .contact .contactInfos .contactElements::before{
+        top: -10px;
+        left: -10px;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .contact .contactInfos .contactInfo{
+        gap: .5rem;
+        font-size: 14px;
+    }
+
+    
+    .contact .contactInfos .contactInfo .icon{
+        font-size: 1.7rem;
+    }
+    
+    .contact .icons{
+        width: 70%;
+        padding: 3%;
+        height: 120%;
+    }
+    
+    .contact .icons .icon{
+        margin-bottom: 10px;
+        font-size: 2.4rem;
+    }
+    
+    .contact .icons .icon:hover{
+        transform: scale(1.1);
+        border-bottom: solid white;
+    }
+}

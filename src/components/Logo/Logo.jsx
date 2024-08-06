@@ -1,12 +1,13 @@
 import React from 'react';
 import './Logo.css';
-import LogoIMSP from '../../assets/logoimsp.png';
+import LogoImage from '../../assets/Disciples du 21ème siècle.png';
+import { Link } from 'react-router-dom';
 
 const Logo = () => {
   return (
-    <div className="logo flex">
-        <img src={LogoIMSP} alt="Logo IMSP" />
-    </div>
+    <Link to="" className="logo flex">
+        <img src={LogoImage} alt="Logo 'Disciples du 21ème du siècle'" />
+    </Link>
   )
 }
 

@@ -1,136 +1,154 @@
-ul.bar li{
-    position: relative;
+.nav_menu_section{
+    justify-content: space-between;
+    gap: 1rem;
+    width: 70%;
 }
 
-ul .link.active .subMenu p{
+.nav_menu_section .displayBar{
+    display: none;
+}
+
+.nav_menu_section ul.bar{
+    gap: 2rem;
+    text-transform: capitalize;
+}
+
+.nav_menu_section ul .link li .navElement{
+    align-items: center;
+    gap: 15px;
+    justify-content: start;
+}
+
+.nav_menu_section ul .link li .icon{
+   font-size: 1.3rem;
+   opacity: .9;
+}
+
+nav .icon, nav .icon path{
+    fill: var(--color-white-pur);
     color: var(--color-white-pur);
-    font-weight: normal;
 }
 
-ul.bar li .subMenu{
-    position: absolute;
-    top: 25px;
-    width: 300px;
-    left: 50%;
-    padding: 0 1rem 10px;
-    transform: translate(-50%, 0);
-    transition: var(--transition);
-    background: transparent;
-    white-space: wrap;
-    color: var(--color-white-pur);
+.nav_menu_section ul .link.active p, .nav_menu_section ul .link.active .icon path{
+    color: var(--color-secondary);
+    font-weight: bold;
+    fill: var(--color-secondary);
 }
 
-ul.bar li .subMenu .subMenuTop{
-    width: 100%;
-    height: 35px;
-    background-color: transparent;
-}
-
-ul.bar li .subMenu .subMenuMain{
-    background: var(--color-primary);
-    padding: 0 1rem 10px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 4px var(--color-secondary);
-}
-
-ul.bar li .subMenu .subMenuMain::after{
-    width: 30px; height: 30px;
-    left: calc(50% - 15px);
-    top: -15px;
-    transform: rotate(45deg);
-    background-color: var(--color-primary);
-    box-shadow: -1px -1px 1px var(--color-secondary);
-}
-
-ul.bar li .subMenu p{
-    font-size: 14px;
-    white-space: wrap;
-    border-top: .5px solid var(--color-black-opacity);
-    padding: 13px 0;
+.nav_menu_section ul .link::before{
+    background-color: var(--color-secondary);
+    left: calc(49%); top: 95%;
+    border-radius: 20px;
+    width: 15px; height: 5px;
+    opacity: 0;
+    transform: translateY(10px);
     transition: var(--transition);
 }
 
-ul.bar li .subMenu p::after{
+.nav_menu_section ul .link.active::before,.nav_menu_section ul .link:hover::before{
+    transform: translate(0);
+    opacity: 1;
+}
+
+ul li p{
+    color: var(--color-white-pur);
+    flex-wrap: nowrap;
+    font-size: 17px;
+    align-items: center;
+    transition: var(--transition);
+    white-space: nowrap;
+}
+
+.nav_menu_section .icons{
+    font-size: 2rem;
+    gap: 15px;
+}
+
+.nav_menu_section .icons .icon{
     background: var(--color-secondary);
-    height: 2px; width: 0%;
-    top: 100%; left: 0;
+    padding: 5px;
     border-radius: 5px;
-    transition: .4s ease;
-}
-
-ul.bar li .subMenu p:hover::after{
-    width: 100%;
-}
-
-
-ul.bar li .subicon{
     transition: var(--transition);
+    gap: 1rem;
 }
 
-ul.bar li:hover .subicon{
-    transform: rotate(-180deg);
+.nav_menu_section .icons .icon path{
+    fill: white;
 }
 
-ul.bar li .navElement{
+.nav_menu_section .icons .icon:hover{
+    background: white;  
+    transform: scale(.9) rotate(3deg);
+}
 
-    gap: .5rem;
- }
+.nav_menu_section .icons .icon:hover path{
+    fill: var(--color-secondary);
+}
+
+.nav_menu_section button{
+    display: none;
+}
+
+@media (max-width: 1050px) {
+    .nav_menu_section .icons{
+        display: none;
+    }    
+}
 
 
 @media (max-width: 900px){
-    ul.bar li .subMenu{
-        position: static;
-        top: 0px;
-        width: fit-content;
-        padding: 0rem 1rem 5px;
-        left:unset;
-        transform: translate(0%, 0);
-        transition: var(--transition);
-        background: white;
-        white-space: wrap;
-        border-radius: 0 0 10px 10px;
-        color: var(--color-white-pur);
-        margin-left: 10px;
-        box-shadow: none;
-        margin-right: 20px;
-        overflow-y: hidden;
-    }   
-
-    ul.bar li{
-        flex-wrap: wrap;
+    .nav_menu_section{
+        display: block;
+        position: fixed;
+        background: var(--color-primary);
+        top: 20%;
+        border-radius: 30px 0 0 0;
+        padding: 50px 7%;
+        z-index: 60;
+        width: 300px;
     }
 
-    ul.bar li .navElement{
-       flex-wrap: nowrap;
-       width: 100%;
-       padding: 7px 0;
-       gap: .5rem;
+    .nav_menu_section .displayBar{
+        display: block;
+        position: absolute;
+        top: 20px; right: 5%; 
+        transform: rotate(45deg);
+        font-size: 1.5rem;
     }
 
-    ul.bar li .subMenu .subMenuTop, ul.bar li .subMenu .subMenuMain::after{
-       display: none;
+    .nav_menu_section .icons{
+        display: flex;
+        justify-content: start;
+        margin-top: 20px;
+        gap: 20px;
+    }    
+
+    .nav_menu_section ul.bar{
+        display: block;
     }
 
-    ul.bar li .subMenu{
-        left: 0;
-        padding: 0;
-        width: 100%;
-        text-transform: capitalize;
+    .nav_menu_section ul .link::before{
+        display: none;
+    }
+
+    .nav_menu_section ul .link li .navElement{
+       margin-bottom: 20px;
+    }
+
+    .nav_menu_section button{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nav_menu_section{
+        width: 90%;
+        top: 15%;
+        left: 5%;
+        justify-self: center;
+    }
+
+    ul li p{
         font-size: 16px;
-    }
-    
-    ul.bar li .subMenu .subMenuMain{
-       padding: 0;
-       border-radius: 0;
-    }
-
-    ul.bar li p.flex{
-        width: 100%;
-    }
-
-    ul.bar li .subMenu p{
-        text-overflow:clip;
-        padding: 10px 0;
-
     }
 }

@@ -3,10 +3,11 @@
     right: 20px;
     z-index: 100;
     bottom: 20px;
-    padding: 5px 8px 3px;
+    padding: 5px 6px 3px;
     background: var(--color-white-pur);
     border-radius: 5px;
     transform: scale(1);
+    transition: .3s ease;
 }
 
 .gotop .icon{

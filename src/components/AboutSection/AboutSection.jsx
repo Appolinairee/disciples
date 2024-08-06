@@ -6,10 +6,13 @@ import Button from '../Button/Button';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import AboutImage from '../../assets/aboutImage.jpg';
+import AboutImage from '../../assets/discipless.jpeg';
 import { BsArrowRight } from 'react-icons/bs';
-import { FaUsers } from 'react-icons/fa';
-import { RiWechatChannelsLine } from 'react-icons/ri';
+
+// Services Icons
+import {TbClover} from "react-icons/tb";
+import {BsServer} from "react-icons/bs";
+import DescriptionLists from '../ChannelsPresentation/DescriptionLists';
 
 const AboutSection = () => {
 
@@ -20,35 +23,31 @@ const AboutSection = () => {
           });
         AOS.refresh();
       }, []);
-        
+
+      const Services = [
+        {
+            id: 1,
+            icon: TbClover,
+            title: "Fondements de notre Foi",
+            description: "Notre foi est centrée sur la personne de Jésus-Christ, le Sauveur et Rédempteur de l'humanité. Nous croyons en Sa vie, Sa mort et Sa résurrection."
+        },
+
+        {
+            id: 2,
+            icon: BsServer,
+            title: "Partage de l'Évangile",
+            description: "Notre communauté ..."
+        }
+      ];
+      
     return (
         <>
-        <SectionTitle Title="Nous Concernant" Paragraphe="Un pôle d'excellence en Afrique"/>
+        <SectionTitle Title="à propos" Paragraphe="Un Lieu de Foi, d'Unité et de Service"/>
         <section className="aboutSection flex">
             <img src={AboutImage} alt="Image d'illustration de l'entreprise" />
 
             <div className="aboutContent">
-            <div className="aboutStats flex" data-aos="fade-left">
-                    <div className="aboutStat flex">
-                        <FaUsers className="icon"/>
-                        <div>
-                            <h3>1 485<span>+</span></h3>
-                            <p>Trusted Clients</p>
-                        </div>
-                    </div>
-
-                    <div className="aboutStat flex">
-                        <RiWechatChannelsLine className="icon"/>
-                        <div>
-                            <h3>3 423<span>+</span></h3>
-                            <p>Projects Completed</p>
-                        </div>
-                    </div>
-                </div>
-
-                <h2>L'IMSP un pôle d'excellence en recherche théorique en Afrique</h2>
-
-                <p>Vieux de plus d’une trentaine d’années, l’Institut de Mathématiques et de Sciences Physiques (IMSP) a pour mission première d’encourager et de promouvoir la formation et la recherche en mathématiques, en sciences physiques, en informatique et en sciences de l’ingénierie. </p>
+                <DescriptionLists Services={Services} Titre="Les disciples du 21ème siècle" />
 
                 <Button title="Tout Lire" Icon={<BsArrowRight className='icon' />} Class="button3" />
             </div>

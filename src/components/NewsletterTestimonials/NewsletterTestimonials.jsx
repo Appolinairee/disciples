@@ -1,84 +1,30 @@
 import SectionTitle from '../SectionTitle/SectionTitle';
-import Author1 from '../../assets/user.png';
 import Button from '../Button/Button';
-import { BsFillPlayFill } from "react-icons/bs";
+import NewsletterForm from './NewsletterForm';
 
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/effect-cards';
+import { BsHeart } from 'react-icons/bs';
+
 import './NewsletterTestimonials.css';
 
-import { EffectCards } from 'swiper/modules';
-
 const NewsletterTestimonials = () => {
-
-    const Testimonials =[
-        {
-            image: Author1,
-            fullname: "John Doe",
-            job: "Data-Scientist",
-            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fuga sequi rem optio delectus eveniet saepe voluptates sapiente. Excepturi nulla veniam, quia, delectus sunt, fugiat maxime voluptatibus accusantium" 
-        },
-        {
-            image: Author1,
-            fullname: "John Doe",
-            job: "Data-Scientist",
-            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fuga sequi rem optio delectus eveniet saepe voluptates sapiente. Excepturi nulla veniam, quia, delectus sunt, fugiat maxime voluptatibus accusantium" 
-        },
-        {
-            image: Author1,
-            fullname: "John Doe",
-            job: "Data-Scientist",
-            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fuga sequi rem optio delectus eveniet saepe voluptates sapiente. Excepturi nulla veniam, quia, delectus sunt, fugiat maxime voluptatibus accusantium" 
-        },
-        {
-            image: Author1,
-            fullname: "John Doe",
-            job: "Data-Scientist",
-            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fuga sequi rem optio delectus eveniet saepe voluptates sapiente. Excepturi nulla veniam, quia, delectus sunt, fugiat maxime voluptatibus accusantium" 
-        },
-    ]
-
   return (
     <div className='newsTesti'>
-        <SectionTitle Title="Ils en parlent" Paragraphe="S'abonner à notre newsletter"/>
+        <SectionTitle Title="Faire un don" Paragraphe="Envoyer un message"/>
 
         <div className="newsTesti__content flex">        
-            <Swiper className="testimonials"
-            effect={'cards'}
-            grabCursor={true}
-            modules={[EffectCards]}>
-                {
-                    Testimonials.map(({image, fullname, job, content}, index) => (
-                        <SwiperSlide key={index} className="testimonial">
-                            <img src={image} alt={content} />
-                            <p> {content} </p>
+            <div className="donnate">
+                <BsHeart className='icon icon1'/>
+                <h2>Faire un don</h2>
+                <p> Les dons sont une manière simple, concrète et sans engagement d'agir à nos côtés pour la propogation de la grâce de notre sauveur Jésus Christ. <br />
+                Faire un don, c'est agir pour le Seigneur.
+                </p>
 
-                            <div className="authorInfo flex">
-                                <h4> {fullname} </h4>
-                                <p> {job} </p>
-                            </div>
-                        </SwiperSlide>
-                    ))
-                }
-            </Swiper>
+                <div className="overlay" ></div>
 
-            <div className="newsletter">
-                <form action="">
-                    <div className="input names">
-                        <label htmlFor="name">Nom et Prénom</label>
-                        <input type="text" placeholder='Votre Nom et Prénom' id='name'/> <br />
-                    </div>
-
-                    <div className="input names">
-                        <label htmlFor="email">Email</label>
-                        <input type="email" placeholder='Entrer votre email' id='email'/> <br />
-                    </div>
-                
-                    <Button title="Abonnez-vous" Class="button2" type="submit" Icon={<BsFillPlayFill />}/>
-                </form>
+                <Button title="Faire un don" Class="button3" Icon={<BsHeart className='icon'/>}/>
             </div>
+
+            <NewsletterForm />
         </div>
     </div>
   )

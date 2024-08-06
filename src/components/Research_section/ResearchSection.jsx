@@ -1,8 +1,7 @@
 import './ResearchSection.css';
-import Image1 from "../../assets/programme1.jpg";
-import Image2 from "../../assets/programme2.jpg";
-import Image3 from "../../assets/programme3.jpg";
-import Image4 from "../../assets/programme4.jpg";
+import Image1 from "../../assets/OIP.jpeg";
+import Image2 from "../../assets/enseigement2.jpeg";
+import Image3 from "../../assets/OIP (1).jpeg";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
@@ -18,34 +17,27 @@ const ResearchSection = () => {
   const Recherches = [
     {
       img: Image1,
-      title: "Optimisation neurologique",
-      category: "Informatique",
-      category: "Informatique",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro maiores sequi, commodi delectus quia molestiae corrupti. Aperiam harum est laboriosam!"
+      title: "Qui est Jésus-Christ?",
+      category: "Thème de base",
+      description: "Jésus-Christ, le Fils de Dieu, est au cœur de la foi chrétienne. Son enseignement repose sur l'amour, la compassion, la vérité et la rédemption..."
     },
     {
       img: Image2,
-      title: "Optimisation neurologique",
-      category: "Informatique",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro maiores sequi, commodi delectus quia molestiae corrupti. Aperiam harum est laboriosam!"
+      title: "L'Amour du Prochain ",
+      category: "Amour",
+      description: "L'un des enseignements les plus fondamentaux de Jésus est l'amour du prochain, quel que soit son origine, sa croyance ou son statut social..."
     },
     {
       img: Image3,
-      title: "Optimisation neurologique",
-      category: "Informatique",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro maiores sequi, commodi delectus quia molestiae corrupti. Aperiam harum est laboriosam!"
-    },
-    {
-      img: Image4,
-      title: "Optimisation neurologique",
-      category: "Informatique",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro maiores sequi, commodi delectus quia molestiae corrupti. Aperiam harum est laboriosam!"
+      title: "L'Importance de la Prière ",
+      category: "Prière",
+      description: "La prière est un moyen vital pour établir une relation intime avec Dieu. Elle est une conversation avec notre Créateur, un acte de foi, de gratitude, de supplication et d'adoration."
     },
   ]
 
   return (
     <div className="researchs">
-          <SectionTitle Title='Nos Travaux et Créations' Paragraphe="We research all over all"/>
+          <SectionTitle Title='Les enseignements' Paragraphe="L'oeuvre du Saint esprit pour nous"/>
 
           <Swiper className='research_section' 
              slidesPerView={1}

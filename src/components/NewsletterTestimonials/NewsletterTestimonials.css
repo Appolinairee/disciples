@@ -5,92 +5,54 @@
   color: var(--color-white-pur);
 }
 
-.newsTesti .testimonials{
-  width: fit-content !important;
-  max-width: 40%;
-  align-items: start !important;
-  justify-content: start !important;
-  align-content: center !important;
-}
-
-.newsTesti .testimonials .testimonial {
-  width: 350px !important;
-  height: auto !important;
-  padding: 30px 20px 10px;
-}
-
-.newsTesti .testimonials .swiper-slide {
-  border-radius: 18px 0px 18px 18px;
-  font-size: 22px;
-  font-weight: bold;
-  background: var(--color-primary);
-}
-
- .newsTesti .testimonials .swiper-slide:nth-child(1n) {
-  /* background-color: rgb(54, 94, 77); */
-  border:2px solid rgb(54, 94, 77);
-}
-
- .newsTesti .testimonials .swiper-slide:nth-child(2n) {
-  /* background-color: rgb(0, 140, 255); */
-  border:2px solid rgb(0, 140, 255);
-}
-
- .newsTesti .testimonials .swiper-slide:nth-child(3n) {
-  border:2px solid rgb(10, 184, 111);
-}
-
- .newsTesti .testimonials .swiper-slide:nth-child(4n) {
-  border:2px solid rgb(211, 122, 7);
-  /* background-color: rgb(211, 122, 7); */
-}
-
- .newsTesti .testimonials .swiper-slide:nth-child(5n) {
-  /* background-color: rgb(118, 163, 12); */
-  border:2px solid rgb(211, 122, 7);
-}
-
- .newsTesti .testimonials .swiper-slide:nth-child(6n) {
-  /* background-color: rgb(180, 10, 47); */
-  border:2px solid rgb(180, 10, 47);
-}
-
- .newsTesti .testimonials .swiper-slide:nth-child(7n) {
-  /* background-color: rgb(35, 99, 19); */
-  border:2px solid rgb(35, 99, 19);
-}
-
-.newsTesti .testimonials .testimonial img{
-  border-radius: 50%;
-}
-
-.newsTesti .testimonials .testimonial p{
-  font-size: 17px;
-  font-weight: normal;
-  margin: 10px 0;
-  text-align: left;
-  padding-left: 10px;
-  border-left: 3px solid var(--color-black-opacity);
-}
-.newsTesti .testimonials .testimonial .authorInfo{
-  justify-content: start;
-  align-items: center;
-  gap: 10%;
-  font-size: 19px;
+.newsTesti .overlay{
+  background: rgba(0, 0, 0, 0.539);
 }
 
 .newsTesti .newsTesti__content{
   flex-wrap: nowrap;
+  gap: 0;
+  justify-content: space-betwenn;
+  align-items: center;
+  margin-top: rem;
+}
+
+.newsTesti .newsTesti__content .donnate{
+ background: url("../../assets/don.jpeg") center/cover no-repeat; 
+ max-width: 500px;
+ color: white;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.newsTesti .newsTesti__content .donnate .icon1,  .newsTesti .newsTesti__content .donnate p, .newsTesti .newsTesti__content .donnate h2, .newsTesti .newsTesti__content .donnate button{
+  z-index: 30;
+  position: relative;
+}
+
+.newsTesti .newsTesti__content .donnate .icon1{
+ font-size: 35px;
+}
+
+.newsTesti .newsTesti__content .donnate p{
+ margin: 20px 0;
+ font-size: 18px;
 }
 
 
-.newsTesti .newsletter{
+.newsletter{
   margin-top: 2rem;
-  margin-left: 10%;
-  width: 50%;
+  width: 40%;
 }
 
-.newsTesti .newsletter form input{
+.newsletter form input, .newsletter form textarea{
   padding: 15px 10px;
   border: 1px solid var(--color-black-opacity);
   border-radius: 10px;
@@ -99,12 +61,16 @@
   width: 100%;
 }
 
-.newsTesti .newsletter form .input{
+.newsletter form .input{
   position: relative;
   min-width: 300px;
 }
 
-.newsTesti .newsletter form .input label{
+.newsletter form textarea{
+  height: 150px;
+}
+
+.newsletter form .input label{
   position: absolute;
   top: -9px;
   left: 20px;
@@ -113,7 +79,7 @@
   background-color: var(--color-primary);
 }
 
-.newsTesti .newsletter form button{
+.newsletter form button{
   background: var(--color-secondary);
   color: white;
   border: none;
@@ -138,15 +104,24 @@
     width: 80%;
   }
 
-  .newsTesti .newsletter{
+  .newsletter{
     margin-top: 2rem;
     margin-left: 0%;
     width: 100%;
   }
   
 
-  .newsTesti .testimonials{
+  .testimonials{
     max-width: 100% !important;
+  }
+
+  .newsTesti__content .donnate p{
+    font-size: 17px;
+  }
+
+  .newsletter form .input{
+    position: relative;
+    min-width: 90%;
   }
 }
 
@@ -159,5 +134,10 @@
     width: 90% !important;
     height: auto !important;
     padding: 30px 20px 10px;
+  }
+
+  .newsTesti .newsTesti__content .donnate p{
+    font-size: 15px;
+    text-align: left;
   }
 }

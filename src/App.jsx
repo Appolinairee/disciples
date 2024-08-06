@@ -10,6 +10,9 @@ import Error404 from './components/ErrorPage/Error';
 import TransitionEffect from './components/TransitionEffect/TransitionEffect';
 import ScrollToTop from './components/ScrollToTop';
 import Footer from './components/Footer/Footer';
+import Apropos from './Pages/Apropos';
+import Contact from './components/Contact/Contact';
+import Enseigements from './Pages/Enseigements';
 
 const App = () => {
   
@@ -28,7 +31,10 @@ const App = () => {
             <AnimatePresence mode='wait'>
               <Routes>
                 <Route path='' element={<Home />} />
-                <Route path='*' element={<Error404 />} />
+                <Route path='apropos' element={<Apropos />} />
+                <Route path='contacts' element={<Contact />} />
+                <Route path='enseignements' element={<Enseigements />} />
+                <Route path='*'  element={<Home />} />
               </Routes>
             </AnimatePresence>
 

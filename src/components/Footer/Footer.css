@@ -12,7 +12,7 @@ footer.footer .footerContent{
     align-items: center;
 } 
 
-footer.footer .footerContent .lists .bar{
+footer.footer .footerContent .bar{
     gap: 20px;
     white-space: nowrap;
 }
@@ -53,6 +53,7 @@ footer.footer .footerSub::before{
 footer.footer .footerSub p{
     font-size: 15px;
     cursor: pointer;
+    text-align: center;
 }
 
 footer.footer .footerSub span{
@@ -61,7 +62,7 @@ footer.footer .footerSub span{
 
 
 @media (max-width: 1200px) {
-    footer.footer .footerContent .lists{
+    footer.footer .footerContent .bar{
         gap: 10px;
     }
     footer.footer .footerContent .icons{
@@ -84,16 +85,17 @@ footer.footer .footerSub span{
         align-items: start;
     }
 
-    footer.footer .footerContent .lists .bar{
+    footer.footer .footerContent .bar{
         flex-direction: column;
         align-items: start;
         white-space: wrap;
-        gap: 10px;
+        gap: 20px;
         margin: 20px 0;
     }
 
-    footer.footer .footerContent .lists .bar li .navElement{
+    footer.footer .footerContent .bar li .navElement{
         padding: 0px 0;
+        gap: 10px;
     }
 
     footer.footer .footerContent{
@@ -128,7 +130,7 @@ footer.footer .footerSub span{
 }
 
 @media (max-width: 480px){
-    footer.footer .footerContent .lists{
+    footer.footer .footerContent .bar{
        margin-top: 20px;
     }
 

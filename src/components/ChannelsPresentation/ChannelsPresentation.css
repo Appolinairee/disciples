@@ -1,0 +1,180 @@
+.channels{
+    padding: 5rem 5%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+.channelsSlides{
+   width: 70%;
+}
+
+.channelsSlides h3{
+   margin-bottom: 2rem;
+}
+
+.channelsSlides li{
+    width: 100%;
+    height: 500px;
+}
+
+.channelsSlides img{
+    width: 100%; 
+    height: 500px;
+}
+
+.channelsSlides .dot.selected{
+    width: 15px;
+    border-radius: 3px;
+}
+
+.channelsSlides .channel .channelInfo{
+    position: absolute;
+    left: 10%;
+    top: 60%;
+    font-size: 2rem;
+    color: white;
+    z-index: 30;
+    text-align: left;
+}
+
+.channelsSlides .channel .channelInfo span{
+    font-size: 14px;
+    border-radius: 5px;
+    background: gray;
+    padding: 5px 7px;
+    margin-right: 10px;
+}
+
+.ChannelsContents{
+    color: var(--color-white-pur);
+    
+}
+
+.ChannelsContents .channelContent{
+    gap: 1rem;
+    font-size: 18px;
+    justify-content: start;
+    margin-bottom: 15px;
+}
+
+.ChannelsContents .channelContent .flex{
+   justify-content: start;
+   gap: .5rem;
+}
+
+.ChannelsContents .channelContent .icon{
+    margin-right: 5px;
+}
+
+.ChannelsContents .channelContent p{
+    padding-left: 5%;
+    margin-left: 8px;
+    line-height: 30px;
+    border-left: 2px solid rgba(0, 0, 0, 0.293);
+}
+
+.ChannelsContents h2{
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 1000px) {
+    .channels{
+        flex-direction: column;
+        gap: 4rem;
+    }
+    
+    .channelsSlides{
+       width: 70%;
+    }
+    
+    .channelsSlides li{
+        width: 100%;
+        height: 500px;
+    }
+    
+    .channelsSlides img{
+        width: 100%; 
+        height: 500px;
+    }
+
+    .ChannelsContents{
+        max-width: 80%;
+    }
+    
+    .ChannelsContents h2{
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .ChannelsContents{
+        max-width: 100%;
+    }
+
+    .channelsSlides{
+        width: 100%;
+     }
+     
+     .channelsSlides li{
+         width: 100%;
+         height: 450px;
+     }
+     
+     .channelsSlides img{
+         width: 100%; 
+         height: 450px;
+     }
+
+    .channelsSlides .channel .channelInfo{
+        top: 60%;
+    }
+
+    .ChannelsContents h2{
+        text-align: left;
+    }
+
+    .channels{
+        padding: 3rem 5%;
+    }
+}
+
+@media (max-width: 450px) {
+    .channels{
+        padding: 1rem 5%;
+    }
+     
+     .channelsSlides li{
+         height: 350px;
+     }
+     
+     .channelsSlides img{
+         height: 350px;
+     }
+
+    .channelsSlides .channel .channelInfo{
+        top: 50%;
+    }
+
+    .channelsSlides .channel .channelInfo h3{
+        font-size: 1.7rem;
+    }
+
+    .ChannelsContents h2{
+        text-align: left;
+        font-size: 1.5rem;
+    }
+
+    .ChannelsContents .channelContent p{
+       font-size: 15px;
+    }
+
+    .ChannelsContents .channelContent b{
+        font-size: 16px;
+    }
+
+    .ChannelsContents .channelContent{
+        line-height: 30px;
+    } 
+}

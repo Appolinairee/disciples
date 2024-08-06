@@ -42,6 +42,10 @@ button.button3 .icon{
     font-size: 1rem;
 }
 
+button.button3 .icon path{
+    fill: white;
+}
+
 @media screen and (max-width: 450px) {
     button{
         padding: 10px 10px;
