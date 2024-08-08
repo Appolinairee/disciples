@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap');
 
-*, ::after, ::before{
+*, ::after, ::before {
     padding: 0;
     margin: 0;
     border: none;
@@ -11,7 +11,7 @@
     color: var(--color-dark);
 }
 
-:root{
+:root {
     /* COLORS */
     --color-primary: white;
     --color-secondary: #1E80DA;
@@ -27,7 +27,7 @@
     --transition: all .2s ease;
 }
 
-body .app.theme{
+body .app.theme {
     /* COLORS */
     --color-primary: #0c111b;
     --color-secondary: #1E80DA;
@@ -44,36 +44,36 @@ body .app.theme{
     --transition: all .2s ease;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body, button, input{
+body, button, input {
     font-family: 'Montserrat', sans-serif;
 }
 
-body{
+body {
     line-height: 1.6;
     overflow-x: hidden;
 }
 
-p{
+p {
     font-size: 17px;
 }
 
-body .app{
+body .app {
     background: var(--color-primary);
     overflow-x: hidden;
 }
 
-.section{
+.section {
     margin: 3rem 3%;
     background: var(--color-primary);
     padding: 3rem 2%;
     min-height: 55vh;
 }
 
-.btn{
+.btn {
     display: inline-block;
     width: fit-content;
     display: flex;
@@ -87,34 +87,36 @@ body .app{
     transition: var(--transition);
 }
 
-.overlay{
+.overlay {
     position: absolute;
-    width: 100%; height: 100%;
-    top: 0; left: 0 ;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
     z-index: 5;
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.grid{
+.grid {
     display: grid;
 }
 
-.flex{
+.flex {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
 }
 
-.icon{
+.icon {
     cursor: pointer;
 }
 
-.before, .after{
+.before, .after {
     position: relative;
 }
 
-.before::before, .after::after{
+.before::before, .after::after {
     content: '';
     position: absolute;
     top: 0;
@@ -124,9 +126,29 @@ body .app{
     height: 1px;
 }
 
+.text-primary {
+    color: var(--color-secondary);
+}
+
+.box-shadow {
+    box-shadow: 1px 1px 2px var(--color-black-opacity), -1px -1px 2px var(--color-black-opacity);
+}
+
+.btn-primary {
+    background: var(--color-secondary);
+    padding: 5px 10px;
+    font-weight: 500;
+    color: white;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+.font-semibold {
+ font-weight: 500;
+}
 
 @media (max-width: 480) {
-    p{
+    p {
         font-size: 16px;
     }
 }

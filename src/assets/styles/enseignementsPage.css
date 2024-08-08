@@ -1,0 +1,51 @@
+.lesson-page {
+    padding: 3rem 5%;
+}
+
+.lesson-page .title-author {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.lesson-page img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    margin: 2rem auto;
+    border-radius: 10px;
+}
+
+.lesson-page .paragraph {
+    margin: 2rem 0;
+}
+
+.lesson-page .paragraph-title {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media (max-width: 500px) {
+    .lesson-page {
+        padding: 1rem 3%;
+    }
+    
+    .lesson-page .title-author {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .lesson-page img {
+        width: 100%;
+        height: auto;
+        max-width: 350px;
+        margin: 1rem auto;
+        border-radius: 10px;
+    }
+    
+    .lesson-page .paragraph p {
+        margin: 0rem 0;
+        font-size: 15px;
+        text-align: justify;
+        text-justify: justify;
+    }
+}

@@ -5,6 +5,7 @@ import TitleAndAuthor from "../components/Lesson/TitleAndAuthor";
 import Paragraph from "../components/Lesson/Paragraph";
 import Quote from "../components/Lesson/Quote";
 import ListContent from "../components/Lesson/ListContent";
+import "../assets/styles/enseignementsPage.css";
 
 const EnseignementPage = () => {
   const { id } = useParams();
@@ -15,17 +16,14 @@ const EnseignementPage = () => {
   }
 
   return (
-    <div className="section">
+    <div className="section lesson-page">
       <TitleAndAuthor title={lesson.title} author={lesson.author} />
 
       {lesson?.contents.map((content, index) => {
         switch (content.type) {
           case "introduction":
             return (
-              <div key={index} className="introduction">
-                <img src={content.image} alt="" />
-                <p>{content.text}</p>
-              </div>
+              <Paragraph key={index} content={content} />
             );
           case "paragraph":
             return <Paragraph key={index} content={content} />;

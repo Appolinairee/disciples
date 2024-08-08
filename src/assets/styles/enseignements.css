@@ -1,0 +1,51 @@
+.lessons {
+    
+}
+
+.lessons h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.lessons .lessons-list {
+    padding: 1rem 10%;
+    cursor: pointer;
+}
+
+.lessons .lessons-list a {
+    border-radius: 20px;
+    padding: 10px 5%;
+    margin-bottom: 1rem;
+}
+
+.lessons .lessons-list li span {
+    font-size: 14px;
+    justify-content: start;
+}
+
+.lessons .lessons-list li p {
+    margin: 5px 0;
+}
+
+.lessons .lessons-list .lesson-arrow {
+    border: 1px solid var(--color-secondary);
+    padding: 10px 12px 4px;
+    border-radius: 50%;
+}
+
+@media (max-width: 500px) {
+    .lessons {
+        padding-top: 1rem;
+    }
+
+    .lessons h2 {
+        font-size: 1rem;
+    }
+    
+    .lessons .lessons-list {
+        padding: 1rem 2%;
+        cursor: pointer;
+        font-size: 13px;
+    }
+
+}
