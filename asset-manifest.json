@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/disciples/static/css/main.f903527d.css",
-    "main.js": "/disciples/static/js/main.e8441b80.js",
+    "main.css": "/disciples/static/css/main.9f7a3c1b.css",
+    "main.js": "/disciples/static/js/main.399a2ed0.js",
     "static/media/monpeuple.png": "/disciples/static/media/monpeuple.0af07b715e3fe5b0daa6.png",
     "static/media/don.jpeg": "/disciples/static/media/don.a6749443a129bd17173d.jpeg",
     "static/media/écrits_hébraique.jpeg": "/disciples/static/media/écrits_hébraique.9f80a4c641c0d5752945.jpeg",
@@ -10,11 +10,11 @@
     "static/media/etrechretien.jpeg": "/disciples/static/media/etrechretien.b9af58c4c4c008c9d016.jpeg",
     "static/media/OIP.jpeg": "/disciples/static/media/OIP.ab7675f1e771a3f3cacb.jpeg",
     "index.html": "/disciples/index.html",
-    "main.f903527d.css.map": "/disciples/static/css/main.f903527d.css.map",
-    "main.e8441b80.js.map": "/disciples/static/js/main.e8441b80.js.map"
+    "main.9f7a3c1b.css.map": "/disciples/static/css/main.9f7a3c1b.css.map",
+    "main.399a2ed0.js.map": "/disciples/static/js/main.399a2ed0.js.map"
   },
   "entrypoints": [
-    "static/css/main.f903527d.css",
-    "static/js/main.e8441b80.js"
+    "static/css/main.9f7a3c1b.css",
+    "static/js/main.399a2ed0.js"
   ]
 }
